@@ -14,6 +14,7 @@ public class NewYorkTimes
 
          for(int i = 14; i <= 20; i = i + 2)
          {
+            System.out.println("");
             System.out.println("Enter No " + i);
          
             for(int n = 2; n <= 5; n++)
