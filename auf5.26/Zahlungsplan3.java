@@ -1,22 +1,20 @@
-import java.util.Scanner;
+import java.util.*;
 
 public class Zahlungsplan3
 {
    public static void main(String[] args)
    {
       Scanner scanner = new Scanner(System.in);
-
+   
       System.out.println("Bitte einen ganzahligen Kreditbetrag eingeben");
 
       int kreditbetrag = scanner.nextInt();
-      
-      scanner.close();
 
       System.out.println("Bitte einen ganzahligen Ratenbetrag eingeben");
 
       int ratenbetrag = scanner.nextInt();
       
-      scanner.close();
+      scanner.close(); 
 
       int ratenanzahl;
 
