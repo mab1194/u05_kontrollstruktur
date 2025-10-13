@@ -26,6 +26,16 @@ public class BreakEvenPoint
       int ueberschuss;
       int gesamtkosten;
    
+      System.out.println("");
+      System.out.println("Break-EvenPoint");
+      System.out.println("===============");
+      System.out.println("Verkaufspreis pro Stueck: " + stueckVerkaufspreis);
+      System.out.println("Rohstoffkosten pro Stueck: " + stueckRohstoffkosten);
+      System.out.println("Arbeitskosten pro Stueck: " + stueckArbeitskosten);
+      System.out.println("Fixkosten pro Monat: " + monatFixkosten);
+      System.out.println("Maximale Stueckzahl pro Monat: " + monatMaxStueckzahl);
+      System.out.println("");
+
       for(int i = 1; i<= monatMaxStueckzahl; i++)
       {
          varKosten = (stueckRohstoffkosten + stueckArbeitskosten) * i;
