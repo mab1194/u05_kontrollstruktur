@@ -28,6 +28,10 @@ public class Annuitaetentilgung1
       System.out.println("");
       System.out.println("Annuitaetentilgung");
       System.out.println("");
+      System.out.printf("Zinssatz:  %4d\n",zinssatz);
+      System.out.printf("Kredit:    %4d\n",kredit);
+      System.out.printf("Annuitaet: %4d\n",annuitaet);
+      System.out.println("");
 
       while(restschuld>0)
       {
@@ -51,8 +55,7 @@ public class Annuitaetentilgung1
             break;         
          }
 
-         System.out.printf("Jahr %d " + "  Restschuld %4d " + "  Zinsen %3d " + "  Tilgung %4d " + "  Zahlung %4d" , i, restschuld, zinsen, tilgung, zahlung);
-         System.out.println("");
+         System.out.printf("Jahr %d " + "  Restschuld %4d " + "  Zinsen %3d " + "  Tilgung %4d " + "  Zahlung %4d \n" , i, restschuld, zinsen, tilgung, zahlung);
          restschuld = restschuld - tilgung;
       }
    }
