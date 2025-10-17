@@ -4,15 +4,18 @@ public class RoemischeZahlen
 {
       public static void main(String[] args) throws Exception
       {
+         // Deklarationen
          String roemischeZahl;
          int    arabischeZahl = 0;
 
+         // Eingabe einlesen
          InputStreamReader eingabeLeser      = new InputStreamReader(System.in);
          BufferedReader    gepufferterLeser  = new BufferedReader(eingabeLeser);
 
          System.out.print("Roemische Zahl: ");
          roemischeZahl = gepufferterLeser.readLine();
          
+         // Schleife für die Abfrage der remischen Zahlen und die Berechnung der arabischen Zahl
          for(int i = 0; i < roemischeZahl.length(); i++)
          {
             char roemischChar = roemischeZahl.charAt(i);
@@ -76,6 +79,7 @@ public class RoemischeZahlen
             
          }
          
+         // Ausgabe der finalen arabischen Zahl
          System.out.println("Arabische Zahl: " + arabischeZahl);
          System.out.println("");
           
