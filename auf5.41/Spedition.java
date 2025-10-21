@@ -4,6 +4,7 @@ public class Spedition
 {
     public static void main(String [] args)
     {
+        // Deklaration
         int maxLadegewicht1 = 10;
         int ladegewicht1 = 0;
         int ladegewicht2 = 0;
@@ -18,12 +19,17 @@ public class Spedition
         boolean wagen1Voll = false;
         boolean wagen2Voll = false;
         boolean wagenbefuellt = false;
+
+        // Ausgabe der deklarierten Werte
         System.out.printf("Wagen1: Maximales Ladegewicht %2d" + ", Maximales Ladevolumen %2d" +  "\n" + "        Aktuelles Ladegewicht %2d" + ", Aktuelles Ladevolumen %2d" + "\n" ,maxLadegewicht1,maxLadevolumen1,ladegewicht1,ladevolumen1);
         System.out.println("");
         System.out.printf("Wagen2: Maximales Ladegewicht %2d" + ", Maximales Ladevolumen %2d" +  "\n" + "        Aktuelles Ladegewicht %2d" + ", Aktuelles Ladevolumen %2d" + "\n" , maxLadegewicht2, maxLadevolumen2, ladegewicht2, ladevolumen2);   
         
+
+        // Schleife für die Beladung
         do
-        {
+        {   
+            // Einlesen der Beladungen
             Scanner scanner = new Scanner(System.in);
             System.out.printf("Gewicht der naechsten Ladung:  ");
             gewicht = scanner.nextInt();
@@ -31,7 +37,7 @@ public class Spedition
             System.out.printf("Volumen der naechsten Ladung:  ");
             volumen = scanner.nextInt();
             System.out.printf("\n");
-        
+            
             if((gewicht + ladegewicht1) > maxLadegewicht1 || (volumen + ladevolumen1) > maxLadevolumen1)
             {
                if((gewicht + ladegewicht2) > maxLadegewicht2 || (volumen + ladevolumen2) > maxLadevolumen2)
@@ -70,6 +76,8 @@ public class Spedition
                wagenbefuellt = true;
             }
         }
+
+        //Bedingung fuer die Beendigung der Schleife 
         while(wagenbefuellt == false);
         
         if(wagenbefuellt == true)
